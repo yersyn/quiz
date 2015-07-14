@@ -38,4 +38,9 @@ footer{
 nav span {
 	margin: 0px, 10px, 0px, 0px;
 }
-
+ img{
+ 	height: 140px;
+ 	width: 130px;
+ 	border: 2px solid #DCA114;
+ 	border-radius: 2em;
+ }

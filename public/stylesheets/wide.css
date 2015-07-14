@@ -26,3 +26,9 @@ footer{
 	clear: both;
 	display: block;
 }
+ img{
+ 	height: 160px;
+ 	width: 150px;
+ 	border: 2px solid #DCA114;
+ 	border-radius: 2em;
+ }
