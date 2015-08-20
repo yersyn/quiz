@@ -4,7 +4,7 @@
 }
 
 body{
-	font: 16px Georgia,serif;
+	font: 16px Cambria,Georgia,serif;
 	}
 
 #page-wrap	
@@ -31,6 +31,11 @@ header, nav, section{
 	text-align: center;
 }
 
+h1, h2, h3, h4, h5, h6{
+	font-style:italic;
+	font-family: Cambria,Helvetica;
+}
+
 footer{
 	background: #eee;
 	text-align: center;
@@ -38,6 +43,12 @@ footer{
 nav span {
 	margin: 0px, 10px, 0px, 0px;
 }
+
+#ErrorMsgs{
+	color: #F61;
+	font-size: smaler;
+}
+
  img{
  	height: 140px;
  	width: 130px;
