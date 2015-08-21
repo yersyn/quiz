@@ -1,6 +1,6 @@
 
 var models=require('../models/models.js');
-
+var temas=["otro","humanidades","ocio","ciencia","tecnologia"];
 //Autoload  - factoriza el codigo si alguna ruta incluye :id
 exports.load=function(req, res, next, quizId){
 	models.Quiz.findById(quizId).then(
@@ -56,8 +56,7 @@ exports.create=function(req,res){
 };
 
 exports.edit=function(req,res){
-	var quiz=req.quiz;//autoload de instancia de quiz
-	var temas=["otro","humanidades","ocio","ciencia","tecnologia"];
+	var quiz=req.quiz;//autoload de instancia de quiz	
 	res.render('quizes/edit', {quiz:quiz,temas:temas, errors:[]});
 };
 

@@ -4,8 +4,11 @@
 <label for="respuesta">Respuesta</label>
 <input type="text" id="respuesta" name=quiz[respuesta] value="<%=quiz.respuesta%>" placeholder="respuesta" ></input><br/>
 <select name=quiz[tema]>
-<%for(var i=0;i<temas.length;i++){%>
-  <option value="<%=temas[i]%>"><%=temas[i]%></option>  
+<%for(var i=0;i<temas.length;i++){
+	var seleccion="";
+	if (temas[i]===quiz.tema) {seleccion="selected"}else{seleccion=""};
+%>
+  <option value="<%=temas[i]%>" <%=seleccion%> > <%=temas[i]%> </option>  
   <%}%>
 </select><br/>
 <a href="/quizes"><input type="button" value="Cancelar"></input></a>  
