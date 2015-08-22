@@ -4,14 +4,14 @@
 	<% var i; for(i=0;i<quizes.length;i++){ %>
 	<tr>
 		<td><a href="/quizes/<%= quizes[i].id %>"> <%= quizes[i].pregunta %> <%= quizes[i].tema %> </a></td>
-		<td><a href="/quizes/<%= quizes[i].id %>/edit"><button>editar</button></a></td>
+		<td><a href="/quizes/<%= quizes[i].id %>/edit" ><button class="btn btn-default btn-xs">editar</button></a></td>
 		<td>
 			<form method="post" action="/quizes/<%=quizes[i].id%>/delete?_method=delete">
-				<button type="submit" onclick="return confirm('Borrar: <%= quizes[i].pregunta %>');">
+				<button type="submit" onclick="return confirm('Borrar: <%= quizes[i].pregunta %>');"  class="btn btn-danger btn-xs">
 				eliminar</button>
 			</form>
 		</td>
 	</tr>
 	<% } %>
 </table>
-<a href="/quizes/new">Crear pregunta</a>
+<a href="/quizes/new" ><button  class="btn btn-primary">Crear pregunta</button></a>

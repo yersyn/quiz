@@ -1,5 +1,7 @@
-<form method="get" action="/quizes/<%= quiz.id %>/answer">
-	Pregunta:<%=quiz.pregunta%><p>
-	<input type="text" name="respuesta" placeholder="Respuesta"></input>
-	<input type="submit" value="Enviar"></input>
-</form>
+<div id="quiz">
+	<form method="get" action="/quizes/<%= quiz.id %>/answer">
+		<label for="respuesta" >Pregunta:<%=quiz.pregunta%></label> <br/>
+		<input type="text" id="respuesta" class="form-control" name="respuesta" placeholder="Respuesta"  ></input>
+		<button type="submit" class="btn btn-success">Validar</button>	
+	</form>
+</div>

@@ -3,6 +3,7 @@
 	padding: 0;
 }
 
+
 body{
 	font: 16px Cambria,Georgia,serif;
 	}
@@ -32,13 +33,14 @@ header, nav, section{
 }
 
 h1, h2, h3, h4, h5, h6{
-	font-style:italic;
+	font-style: italic;
 	font-family: Cambria,Helvetica;
+	font-weight: bold;
 }
 
 footer{
 	background: #eee;
-	text-align: center;
+	text-align: center;	
 }
 nav span {
 	margin: 0px, 10px, 0px, 0px;
@@ -49,9 +51,36 @@ nav span {
 	font-size: smaler;
 }
 
+#quiz{
+	margin: 0px auto;
+	width: 300px;
+}
+
+div button{
+	margin-top: 10px;
+}
+
  img{
  	height: 140px;
  	width: 130px;
  	border: 2px solid #DCA114;
  	border-radius: 2em;
+ }
+
+ #h1{
+ 	height: 10%;
+ }
+
+ #n1{
+ 	width: 10%;
+ 	height: 80%;
+  }
+
+ #s1{
+	height: 80%;
+	width: 90%;
+ }
+
+ #f1{
+ 	height: 10%;
  }
