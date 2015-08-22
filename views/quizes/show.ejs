@@ -4,4 +4,9 @@
 		<input type="text" id="respuesta" class="form-control" name="respuesta" placeholder="Respuesta"  ></input>
 		<button type="submit" class="btn btn-success">Validar</button>	
 	</form>
+	<p><a href="/quizes/<%=quiz.id%>/comments/new"><button>Nuevo comentario</button></a></p>
+	<p><strong>Comentarios: </strong></p>
+	<% for(index in quiz.Comments){ %>
+			<p>-<%= quiz.Comments[index].texto %></p>
+	<%}%>
 </div>
