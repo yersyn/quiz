@@ -1,6 +1,6 @@
 <h2>Lista de preguntas</h2>
 
-<table>
+<table id="quiz">
 	<% var i; for(i=0;i<quizes.length;i++){ %>
 	<tr>
 		<td><a href="/quizes/<%= quizes[i].id %>"> <%= quizes[i].pregunta %> <%= quizes[i].tema %> </a></td>

@@ -30,7 +30,7 @@ exports.show=function (req,res) {
 };
 
 exports.answer=function(req,res){	
-		if (req.query.respuesta===req.quiz.respuesta) {
+		if (req.query.respuesta.toUpperCase()===req.quiz.respuesta.toUpperCase()) {
 			res.render('quizes/answer',{quiz:req.quiz, respuesta:'Correcto',errors:[]});
 		}else{
 			res.render('quizes/answer',{quiz:req.quiz ,respuesta:'Incorrecto',errors:[]});
